@@ -1,0 +1,51 @@
+
+  //This sample labels a feature from the simple feature class in its feature-linked annotation feature class.
+  //IFeature pLabelFt is the feature from the simple feature class
+  //IFeatureLayer pAnnoLy is the feature-linked annotation feature layer of the simple feature class
+  
+  //After applying the EditAnnotationFeatureClass method, we can successfully add or label the designated 
+  //features in the annotation feature layer
+  
+        static void EditAnnotationFeatureClass(IFeature pLabelFt, IFeatureLayer pAnnoLy, IMxDocument pMxdoc)
+        {
+            IFeatureClass pAnnofc = pAnnoLy.FeatureClass;
+            IAnnoClass pAnnoCL = pAnnofc.Extension;
+            ISpatialReference sR = new ProjectedCoordinateSystem() as ISpatialReference;
+            sR = pMxdoc.FocusMap.SpatialReference;
+            IDisplay disP = pMxdoc.ActiveView.ScreenDisplay;
+            IEnvelope enV = pMxdoc.ActiveView.Extent;
+            IBarrierCollection pBarr = pMxdoc.FocusMap.get_Barriers(enV);
+            IElement El1 = new TextElement();
+            IElement El2 = new TextElement();
+            IAnnotateLayerPropertiesCollection pAnnoPropCl = pAnnoCL.AnnoProperties;
+
+            IAnnotateLayerProperties pAnnoProp = new LabelEngineLayerProperties() as IAnnotateLayerProperties;
+            //IAnnotateLayerProperties pAnnoProp = new MaplexLabelEngineLayerProperties() as IAnnotateLayerProperties;
+            IElementCollection elcl1;
+            IElementCollection elcl2;
+            pAnnoPropCl.QueryItem(0, out pAnnoProp, out elcl1, out elcl2);
+
+            IDataset dt = pAnnofc as IDataset;
+            IWorkspace ws = dt.Workspace;
+            UID pUId = new UID();
+            pUId.Value = "esriEditor.Editor";
+            IEditor pEditor = ArcMap.Application.FindExtensionByCLSID(pUId) as IEditor;
+
+            IAnnotateFeature pAnnoFT = new AnnotateFeature(); 
+            //IAnnotateFeature pAnnoFT = new MaplexAnnotateFeature();
+            pAnnoFT.Label(pAnnoProp, pLabelFt, disP, sR, pBarr, out El1, out El2);
+            IElement pEleinUse = new TextElement();
+            if (El1 != null)
+                pEleinUse = El1;
+            else if (El2 != null)
+                pEleinUse = El2;
+
+            pEditor.StartEditing(ws);
+            IFeature newFt = pAnnofc.CreateFeature();
+            IAnnotationFeature annoFt = newFt as IAnnotationFeature;
+            annoFt.Annotation = pEleinUse;
+            annoFt.LinkedFeatureID = pLabelFt.OID;
+            newFt.Store();
+            pEditor.StopEditing(true);
+            pMxdoc.ActiveView.Refresh();
+        }
