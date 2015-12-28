@@ -1,11 +1,4 @@
 
-  //This sample labels a feature from the simple feature class in its feature-linked annotation feature class.
-  //IFeature pLabelFt is the feature from the simple feature class
-  //IFeatureLayer pAnnoLy is the feature-linked annotation feature layer of the simple feature class
-  
-  //After applying the EditAnnotationFeatureClass method, we can successfully add or label the designated 
-  //features in the annotation feature layer
-  
         static void EditAnnotationFeatureClass(IFeature pLabelFt, IFeatureLayer pAnnoLy, IMxDocument pMxdoc)
         {
             IFeatureClass pAnnofc = pAnnoLy.FeatureClass;
