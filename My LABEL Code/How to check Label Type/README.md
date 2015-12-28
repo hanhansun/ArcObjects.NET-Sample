@@ -1,7 +1,9 @@
 # How to check Label Type - Maplex Label Engine OR Standard Label Engine
 
 This sample shows how to check Label Engine Type (Maplex Label Engine or Standard Label Engine) that has been applied to an existing:
+
 1). Data frame or map
+
 2). Annotation feature class
 
 The methods are different based on the object that the label engine is applied on.
