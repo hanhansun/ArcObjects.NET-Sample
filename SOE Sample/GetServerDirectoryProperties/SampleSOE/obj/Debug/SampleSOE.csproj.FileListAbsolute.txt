@@ -1,0 +1,21 @@
+C:\Users\hanh7700\Documents\Visual Studio 2012\Projects\SampleSOE\SampleSOE\bin\Debug\SampleSOE.dll
+C:\Users\hanh7700\Documents\Visual Studio 2012\Projects\SampleSOE\SampleSOE\bin\Debug\SampleSOE.pdb
+C:\Users\hanh7700\Documents\Visual Studio 2012\Projects\SampleSOE\SampleSOE\obj\Debug\Interop.ACROIEHELPERLib.dll
+C:\Users\hanh7700\Documents\Visual Studio 2012\Projects\SampleSOE\SampleSOE\obj\Debug\SampleSOE.csproj.ResolveComReference.cache
+C:\Users\hanh7700\Documents\Visual Studio 2012\Projects\SampleSOE\SampleSOE\obj\Debug\SampleSOE.dll
+C:\Users\hanh7700\Documents\Visual Studio 2012\Projects\SampleSOE\SampleSOE\obj\Debug\SampleSOE.pdb
+C:\Users\hanh7700\Documents\Visual Studio 2012\Projects\SampleSOE\SampleSOE\bin\Debug\SampleSOE.soe
+\\csc-hsun7d\PublicShare\SOE\SampleSOE\SampleSOE\bin\Debug\SampleSOE.dll
+\\csc-hsun7d\PublicShare\SOE\SampleSOE\SampleSOE\bin\Debug\SampleSOE.pdb
+\\csc-hsun7d\PublicShare\SOE\SampleSOE\SampleSOE\obj\Debug\Interop.ACROIEHELPERLib.dll
+\\csc-hsun7d\PublicShare\SOE\SampleSOE\SampleSOE\obj\Debug\SampleSOE.csproj.ResolveComReference.cache
+\\csc-hsun7d\PublicShare\SOE\SampleSOE\SampleSOE\obj\Debug\SampleSOE.dll
+\\csc-hsun7d\PublicShare\SOE\SampleSOE\SampleSOE\obj\Debug\SampleSOE.pdb
+D:\HS\Incident_Open\_CommonTool\SOE_SOI\SampleSOE\SampleSOE\bin\Debug\SampleSOE.dll
+D:\HS\Incident_Open\_CommonTool\SOE_SOI\SampleSOE\SampleSOE\bin\Debug\SampleSOE.pdb
+D:\HS\Incident_Open\_CommonTool\SOE_SOI\SampleSOE\SampleSOE\obj\Debug\SampleSOE.csprojResolveAssemblyReference.cache
+D:\HS\Incident_Open\_CommonTool\SOE_SOI\SampleSOE\SampleSOE\obj\Debug\Interop.ACROIEHELPERLib.dll
+D:\HS\Incident_Open\_CommonTool\SOE_SOI\SampleSOE\SampleSOE\obj\Debug\SampleSOE.csproj.ResolveComReference.cache
+D:\HS\Incident_Open\_CommonTool\SOE_SOI\SampleSOE\SampleSOE\obj\Debug\SampleSOE.dll
+D:\HS\Incident_Open\_CommonTool\SOE_SOI\SampleSOE\SampleSOE\obj\Debug\SampleSOE.pdb
+D:\HS\Incident_Open\_CommonTool\SOE_SOI\SampleSOE\SampleSOE\bin\Debug\SampleSOE.soe
