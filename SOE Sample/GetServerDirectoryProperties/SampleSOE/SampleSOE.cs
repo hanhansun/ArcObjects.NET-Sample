@@ -135,7 +135,7 @@ namespace SampleSOE
             string outputSTR = null;
 
             IPropertySet propertySet = new PropertySet();
-            propertySet.SetProperty("URL", "http://localhost:6080/arcgis/admin");
+            propertySet.SetProperty("URL", "http://localhost:6080/arcgis/admin");//Or, you may use the fully-qualified url (with domain)
             propertySet.SetProperty("USER", "yourServerAdminUsername") ; 
             propertySet.SetProperty("PASSWORD", "yourServerAdminPassword");
             propertySet.SetProperty("ConnectionMode", esriAGSConnectionMode.esriAGSConnectionModeAdmin);
